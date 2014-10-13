@@ -15,8 +15,8 @@ Usando el selector se llama el customtooltip.
 
 $(elemento).customtooltip(); 
 
-Avanzado:
-var params = {
+Avanzado:<br>
+var params = {<br>
           &nbsp;&nbsp;&nbsp;&nbsp;fontSize: "10px", //Tamaño por defecto de la fuente<br>
           &nbsp;&nbsp;&nbsp;&nbsp;fontColor: '#000',  //Color del texto por defecto<br>
           &nbsp;&nbsp;&nbsp;&nbsp;containerWidth: "250px",  //Ancho del contenedor por defecto<br>
