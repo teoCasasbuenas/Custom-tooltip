@@ -15,9 +15,9 @@
 
         this.each(function(){
             var $t = $(this);
-            var wrapper = "<div id='tooltipWrapper'></div>",
-                text = $t.attr('data-text');
-            $t.bind(customTooltip($t, text, wrapper, params));
+                var wrapper = "<div id='tooltipWrapper'></div>",
+                    text = $t.attr('data-text');
+                $t.bind(customTooltip($t, text, wrapper, params));
         });
 
         //Permitir el encademaniento
@@ -27,6 +27,9 @@
 
 function customTooltip(elemento, text, wrapper, params){
     $(elemento).on('mouseenter', function(){
+        if($("#tooltipWrapper").length > 0){
+            $("#tooltipWrapper").remove();
+        }
         $('body').append(wrapper);
         var newText = buildContent(params, text);
         $('#tooltipWrapper').html(newText).css({
