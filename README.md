@@ -17,11 +17,11 @@ $(elemento).customtooltip();
 
 Avanzado:
 var params = {
-          fontSize: "10px", //Tamaño por defecto de la fuente<br>
-          fontColor: '#000',  //Color del texto por defecto
-          containerWidth: "250px",  //Ancho del contenedor por defecto
-          tamper: ',',  //Elemento con el que romperemos la cadena de caracteres cuando aplica.
-          multiple:  false,  //Parámetro para indicar que se hará ruptura de la cadena
-          wrapper: 'p'  //Elemento HTML con el que envolveremos el texto dentro del custom tooltip
-          }
+          &nbsp;&nbsp;&nbsp;&nbsp;fontSize: "10px", //Tamaño por defecto de la fuente<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;fontColor: '#000',  //Color del texto por defecto<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;containerWidth: "250px",  //Ancho del contenedor por defecto<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;tamper: ',',  //Elemento con el que romperemos la cadena de caracteres cuando aplica.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;multiple:  false,  //Parámetro para indicar que se hará ruptura de la cadena<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;wrapper: 'p'  //Elemento HTML con el que envolveremos el texto dentro del custom tooltip<br>
+          }<br>
 $(elemento).customtooltip(params);
