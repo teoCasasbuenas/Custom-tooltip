@@ -10,7 +10,7 @@ Se debe cargar jQuery, y el customtooltip.js o la versión minificada customtool
 
 Uso:
 
-Simple:
+Simple:<br>
 Usando el selector se llama el customtooltip.
 
 $(elemento).customtooltip(); 
