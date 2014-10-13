@@ -37,10 +37,11 @@ function customTooltip(elemento, text, wrapper, params){
             'color': params.fontColor,
             'width': params.containerWidth
         });
-        followMouse();
+        followMouse(params.containerWidth);
     });
     $(elemento).on('mouseleave', function(){
         $('#tooltipWrapper').remove();
+        $(document).unbind(followMouse());
     });
 }
 
@@ -60,11 +61,23 @@ function buildContent(params, text){
     }
 }
 
-function followMouse(){
+function followMouse(width){
     $(document).on('mousemove', function(e){
-        $('#tooltipWrapper').css({
-            left:  e.pageX + 10,
-            top:   e.pageY + 10
-        });
+        var $tw = $("#tooltipWrapper"),
+            bordT =  $tw.outerWidth() -  $tw.innerWidth(),
+            paddT =  $tw.innerWidth() -  $tw.width(),
+            margT =  $tw.outerWidth(true) -  $tw.outerWidth(),
+            ancho = $tw.width() + bordT + paddT + margT;
+        if(e.pageX < ($(window).width() - ancho)){
+            $('#tooltipWrapper').css({
+                left:  e.pageX + 10,
+                top:   e.pageY + 10
+            });
+        }else{
+            $('#tooltipWrapper').css({
+                left:  e.pageX - 10 - ancho,
+                top:   e.pageY + 10
+            });
+        }
     });
 }
