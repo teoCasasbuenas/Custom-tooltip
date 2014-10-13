@@ -17,7 +17,7 @@ $(elemento).customtooltip();
 
 Avanzado:
 var params = {
-          fontSize: "10px", //Tamaño por defecto de la fuente
+          fontSize: "10px", //Tamaño por defecto de la fuente<br>
           fontColor: '#000',  //Color del texto por defecto
           containerWidth: "250px",  //Ancho del contenedor por defecto
           tamper: ',',  //Elemento con el que romperemos la cadena de caracteres cuando aplica.
