@@ -1,12 +1,14 @@
 Custom-tooltip
 ==============
 
-Este plugin permite pasar texto como atributo para ser mostrado al poner el ratón sobre un elemento configurado en un contenedor
-que seguirá al ratón mientras se este sobre el elemento.
+Este plugin permite pasar texto como atributo para ser mostrado al poner el ratón sobre un elemento configurado en un contenedor que seguirá al ratón mientras se este sobre el elemento. 
+
+Permite mostrar texto como listas, con una pequeña configuración de este.
 
 Configuración:
 
 Se debe cargar jQuery, y el customtooltip.js o la versión minificada customtooltip.min.js
+El o los elementos afectados deben tener un atributo data-text, que se llenara con el texto para mostrar en el tooltip.
 
 Uso:
 
